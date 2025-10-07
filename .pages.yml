@@ -1,12 +1,14 @@
 media: assets/images
 
 content:
+  - name: events
+    label: Events
+    type: collection
+    path: 'content/posts'
   - name: posts
     label: Posts
     type: collection
     path: 'content/posts'
-    view:
-      fields: [ title, published, date ]
     fields:
       - name: title
         label: Title
@@ -15,8 +17,7 @@ content:
         label: Date
         type: date
         options:
-          time: true
-          format: dd-MM-yyyy HH:mm
+          format: MMM-do
       - name: draft
         label: Published
         type: boolean
