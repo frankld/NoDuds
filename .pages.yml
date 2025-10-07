@@ -46,6 +46,9 @@ content:
         label: Published
         type: boolean
         default: true
+      - name: description
+        label: Description
+        type: text
       - name: body
         label: Body
         type: rich-text

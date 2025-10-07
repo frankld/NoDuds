@@ -5,10 +5,10 @@
   {{ partial "head.html" . }}
 </head>
 
-<body>
+<body class="font-sans">
   <header class="flex justify-between p-8 bg-red-500 hover:bg-blue-900 text-lime-400">{{ partial "header.html" . }}
   </header>
-  <main class="main_wrapper ">{{ block "main" . }}{{ end }}</main>
+  <main class="main_wrapper **:[&_p]:font-serif ">{{ block "main" . }}{{ end }}</main>
   <footer class="p-8">{{ partial "footer.html" . }}</footer>
 </body>
 
