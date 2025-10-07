@@ -20,8 +20,6 @@ content:
       - name: date
         label: Date
         type: date
-        options:
-          format: MMM-do
       - name: draft
         label: Published
         type: boolean
