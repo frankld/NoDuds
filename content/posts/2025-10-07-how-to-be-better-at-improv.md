@@ -1,7 +1,7 @@
 ---
 title: How to be better at improv
 date: 2024-08-08T23:00:00
-draft: true
+draft: false
 ---
 ## Hey this is going to be a good site
 
