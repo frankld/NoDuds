@@ -4,11 +4,15 @@ content:
   - name: events
     label: Events
     type: collection
-    path: 'content/posts'
+    path: 'content/events'
+    view:
+      fields: [ title, published, date ]
   - name: posts
     label: Posts
     type: collection
     path: 'content/posts'
+    view:
+      fields: [ title, published, date ]
     fields:
       - name: title
         label: Title
