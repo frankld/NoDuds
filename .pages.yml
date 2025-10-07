@@ -7,22 +7,6 @@ content:
     path: 'content/events'
     view:
       fields: [ title, published, date ]
-    fields:
-      - name: title
-        label: Title
-        type: string
-      - name: date
-        label: Date
-        type: date
-      - name: draft
-        label: Published
-        type: boolean
-        default: true
-      - name: body
-        label: Body
-        type: rich-text
-        options:
-          media: post_images
   - name: posts
     label: Posts
     type: collection
@@ -36,6 +20,8 @@ content:
       - name: date
         label: Date
         type: date
+        options:
+          format: yyyy-MM-dd'T'HH:mm:ss
       - name: draft
         label: Published
         type: boolean
