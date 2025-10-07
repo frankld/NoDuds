@@ -8,7 +8,7 @@ content:
     view:
       fields: [ title, published, date ]
     fields:
-      - name: published
+      - name: draft
         label: Published
         type: boolean
         default: true
