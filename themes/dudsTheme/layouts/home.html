@@ -3,7 +3,7 @@
     {{ .Content }}
 </section>
 <section class="p-8">
-    {{ range site.RegularPages }}
+    {{ range where site.RegularPages "Section" "events" }}
     <h2 class="text-2xl"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
   {{ end }}
