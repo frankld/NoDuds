@@ -1,6 +1,19 @@
 {{ define "main" }}
-<section class="p-8 bg-amber-100">{{ .Content }}</section>
-<section class="p-8">
+
+ 
+  {{ $heroCopy := dict 
+    "overline" "We’ve rebranded: GigaML is now Giga"
+    "headline" "AI Agents for Enterprise Support"
+    "description" "Handle millions of calls with the memory, empathy, and zero wait time your customers expect."
+    "buttonText" "Talk to us"
+    "buttonLink" "https://www.google.com"
+  }}
+  {{ partial "homepage/hero.html" $heroCopy }}
+
+
+
+
+<section class="p-8 mx-auto bg-yellow-300">
   {{ $events := where site.RegularPages "Section" "events"}}
   {{ $posts := where site.RegularPages "Section" "posts"}}
   {{ $updates := slice $events $posts }}
