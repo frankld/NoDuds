@@ -5,7 +5,8 @@ content:
     label: Home Page
     type: file
     path: '/'
-    component: 'hero'
+    fields:
+      component: 'hero'
 
 
   - name: events
