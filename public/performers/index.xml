@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Performers on No Duds</title>
+    <link>http://localhost:1313/performers/</link>
+    <description>Recent content in Performers on No Duds</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Aug 1992 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/performers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/performers/2025-10-08-jackson-michael/</link>
+      <pubDate>Tue, 04 Aug 1992 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/performers/2025-10-08-jackson-michael/</guid>
+      <description>&lt;h1 id=&#34;hello-my-name-is-jackson&#34;&gt;Hello, my name is Jackson&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m from Austin, Massachusetts!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

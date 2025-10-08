@@ -1,6 +1,10 @@
 media: assets/images
 
 content:
+  - name: home
+    label: Home Page
+    type: file
+    path: '/'
   - name: events
     label: Events
     type: collection

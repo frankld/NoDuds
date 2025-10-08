@@ -17,6 +17,12 @@
     <loc>http://localhost:1313/events/2025-10-07-the-bentwood-open/</loc>
     <lastmod>2022-06-06T20:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/performers/2025-10-08-jackson-michael/</loc>
+    <lastmod>1992-08-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/performers/</loc>
+    <lastmod>1992-08-04T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
