@@ -9,29 +9,29 @@ content:
       fields: [ title, published, date ]
     fields:
       - name: title
-        label: Title
+        label: Event Name
         type: string
-      - name: date
-        label: Date
-        type: date
-        options:
-          time: true
-          format: yyyy-MM-dd'T'HH:mm:ss
       - name: draft
-        label: Published
+        label: Draft?
         type: boolean
         default: true
       - name: body
-        label: Body
+        label: Event Description
         type: rich-text
         options:
           media: post_images
-      - name: contact
-        label: Contact information
+      - name: event_details
+        label: Event Details
         type: object
         fields:
-          - name: first_name
-            label: First name
+          - name: date
+            label: Date
+            type: date
+            options:
+              time: true
+              format: yyyy-MM-dd'T'HH:mm:ss
+          - name: location
+            label: Location
             type: string
           - name: last_name
             label: Last name
@@ -67,6 +67,25 @@ content:
         type: text
       - name: body
         label: Body
+        type: rich-text
+        options:
+          media: post_images
+  - name: performers
+    label: Performers
+    type: collection
+    path: 'content/performers'
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: date
+        label: Date Joined
+        type: date
+      - name: description
+        label: Quote
+        type: text
+      - name: body
+        label: Biography
         type: rich-text
         options:
           media: post_images
