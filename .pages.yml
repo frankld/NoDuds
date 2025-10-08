@@ -4,7 +4,7 @@ content:
   - name: home
     label: Home Page
     type: file
-    path: '/'
+    path: '/_pindex.md'
 
 
   - name: events
