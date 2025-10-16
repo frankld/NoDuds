@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'No Duds'
+title = 'No Duds Improv'
 theme = "dudsTheme"
 
 [menus]

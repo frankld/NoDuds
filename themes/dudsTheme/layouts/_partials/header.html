@@ -1,2 +1,15 @@
-<a href="/"><h1 class="font-bold">{{ site.Title }}</h1></a>
+{{ $image := resources.Get "branding/SiteLogo.png"}}
+{{ $logo := $image.Resize "x48"}}
+
+
+<div class="flex flex-row items-center gap-8">
+    <a href="/" class="indent-[-9999px]">
+        <img src="{{ $logo.RelPermalink  }}" alt="Brand Logo">
+    </a>
+
+    <a href="/"><h1 class="font-bold">{{ site.Title }}</h1></a>
+
+
+</div>
+
 {{ partial "menu.html" (dict "menuID" "main" "page" . ) }}
