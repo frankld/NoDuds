@@ -1,0 +1,20 @@
+
+<section class="container relative flex mx-auto my-16 bg-gray-200 rounded-2xl overflow-clip">
+
+  <div class="flex flex-col justify-center w-1/3 gap-8 px-8 py-16 text-white z-1">
+    <div class="flex flex-col gap-2">
+      <p id="OVERLINE" class="text-xs font-bold uppercase text-amber-400">Our Journey</p>
+      <h2 id="HEADLINE" class="text-2xl font-black leading-tight">Your No Duds <br> Graduate Class</h2>
+      <p id="BODY_PARAGRAPH" class="text-sm">Our performances speak for themselves, having over 3 years of experience as
+        and ensemble we really know how to make you laugh</p>
+    </div>
+    {{ partial "button.html" "Learn More" }}
+  </div>
+
+{{ with resources.Get "images/dudsbg.jpg" }}
+  <img src="{{ .RelPermalink }}" alt="" class="absolute z-0 object-cover w-full h-full" >
+{{ else }}
+  <img src="https://placehold.co/800x600/blue/white" alt="" class="absolute z-0 object-fill w-full ">
+{{ end }}
+
+</section>

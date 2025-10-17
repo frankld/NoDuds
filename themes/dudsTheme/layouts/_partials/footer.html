@@ -1,1 +1,50 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+{{ $image := resources.Get "branding/SiteLogo.png"}}
+{{ $logo := $image.Resize "x48"}}
+
+<footer class="flex flex-col items-center gap-16 p-8">
+
+    <div id="FOOTER_TOP" class="container flex justify-between gap-8">
+        <div id="FOOTER_LOGO">
+            <img src="{{ $logo.RelPermalink  }}" alt="Brand Logo">
+        </div>
+        <div id="FOOTER_NAV" class="flex gap-16">
+            <div class="flex flex-col gap-4">
+                <h2 class="font-bold">No Duds</h2>
+                <ul class="contents">
+                    <li>Shows</li>
+                    <li>Events</li>
+                    <li>Performers</li>
+                    <li>Merch Store</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h2 class="font-bold">Help</h2>
+                <ul class="contents">
+                    <li>Contact Us</li>
+                    <li>Help Center</li>
+                    <li>Accesibility</li>
+                    <li>Community Impact</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h2 class="font-bold">Socials</h2>
+                <ul class="contents">
+                    <li>Instagram</li>
+                    <li>TikTok</li>
+                    <li>Facebook</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <hr class="container border border-gray-200">
+    <div id="FOOTER_BOTTOM" class="container flex justify-between text-sm text-gray-500">
+        <p>Copyright {{ now.Year }}. All rights reserved.</p>
+        <div class="flex gap-4">
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+        </div>
+    </div>
+
+</footer>

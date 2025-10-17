@@ -1,0 +1,17 @@
+<div class="container flex items-center bg-amber-400 rounded-2xl">
+    <div id="RIGHT_COL" class="w-1/2">
+        {{ with resources.Get "images/sign-up-image.png" }}
+        <img src="{{ .RelPermalink }}" alt="" class="">
+        {{ else }}
+        <img src="https://placehold.co/1200x800/purple/white" alt="">
+        {{ end }}
+
+    </div>
+    <div id="LEFT_COL" class="flex flex-col w-1/2 gap-4 px-16 py-8 h-fit">
+        <h2 class="text-2xl font-black">Want early entry, private merch shopping, Merch Discounts, and VIP Treatment all
+            year long? </h2>
+        {{ partial "button.html" "Sign Up for Updates" }}
+    </div>
+
+
+</div>

@@ -6,19 +6,23 @@
 </head>
 
 <body class="font-sans ">
-  <header class="p-8 bg-gray-100">
-    <div class="container flex justify-between mx-auto">
-      {{ partial "header.html" . }}
-    </div>
-  </header>
-  <main class="main_wrapper **:[&_p]:font-serif ">
-    {{ block "main" . }}
-    {{ end }}
+  {{ partial "header.html" . }}
+  
+  <section class="flex flex-col items-center pt-8 mb-16 bg-amber-400">
+      {{ partial "hero.html" . }}
+  </section>
+
+  <main class="p-8 main_wrapper">
+    {{ block "main" . }} {{ end }}
   </main>
 
-  <footer class="container px-32 py-8">
+  <section class="flex flex-col items-center p-8 ">
+    {{ partial "prefooter.html" }}
+  </section>
+
+
     {{ partial "footer.html" . }}
-  </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+<section class="container flex flex-col items-center gap-8 py-16 mx-auto">
+  <h2>UPCOMING SHOWS</h2>
+  <ul class="flex w-full gap-8">
+    {{ $headlines := slice "The Show Must Go On" "Diaper Babies" "The Tuesday Night Jam" }}
+    {{ range $headlines }}
+    <li class="flex flex-col w-full gap-4">
+      <header class="overflow-clip rounded-xl">
+        <img src="https://placehold.co/800x600/blue/white" alt="Blue Placeholder" class="object-cover aspect-4/3">
+      </header>
+      <div class="flex flex-col gap-2">
+        <h2 id="HEADLINE" class="text-xl font-bold">{{ . }}</h2>
+        <ul class="flex gap-4 text-sm text-gray-700">
+          <li>OCT 28</li>
+          <li>7:00pm</li>
+          <li>The Pit Lab</li>
+        </ul>
+        <p class="text-sm">Come see No Dud’s signature longform style of improv, The Failure Fantasia, Followed by an
+          audience night
+          mare featuring you! </p>
+      </div>
+      <footer>
+        {{ partial "button.html" "Get Tickets" }}
+      </footer>
+    </li>
+    {{ end }}
+  </ul>
+</section>

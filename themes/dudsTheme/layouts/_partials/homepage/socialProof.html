@@ -1,0 +1,39 @@
+<section class="container flex flex-col items-center gap-8 py-16 mx-auto">
+  <div class="text-center">
+    <p id="OVERLINE" class="font-bold text-red-900 uppercase">Have you seen us?</p>
+    <h2 class="text-4xl font-bold">We have performed at these venues!</h2>
+  </div>
+  <ul class="flex gap-16">
+    {{ range seq 6 }}
+    <li>
+      <img src="https://placehold.co/80x60/blue/white" alt="">
+    </li>
+    {{ end }}
+  </ul>
+</section>
+
+<section class="container flex flex-col items-center gap-8 py-16 mx-auto">
+  <div class="text-center">
+    <p id="OVERLINE" class="font-bold text-red-900 uppercase">Friends of the Duds</p>
+    <h2 class="text-4xl font-bold">Teams we’ve played with and Hope<br>to collaborate with</h2>
+  </div>
+  <ul class="flex flex-wrap justify-center gap-x-16 gap-y-4">
+    {{ range slice 
+        "Cabin Fever"
+        "Mary Shelley"
+        "Midnight Snack"
+        "Pigeonhole"
+        "Jacob Yanovitski"
+        "Peter & Matt"
+        "Submarine World"
+        "Clean Freaks"
+        "The Lake at Dawn"
+        "Suite Tooth"
+        "PWI and Transfer Students"
+    }}
+    <li>
+        <h2 class="font-bold text-gray-500">{{ . }}</h2>
+    </li>
+    {{ end }}
+  </ul>
+</section>
