@@ -13,7 +13,7 @@ content:
     type: collection
     path: 'content/events'
     list: {min: 1 , max: 4 }
-    view: {fields: [ title, draft, date ], primary: title, sort: [ date, title, draft ], layout: tree}
+    view: {fields: [ title, draft, date ], primary: title, sort: [ date, title, draft ]}
     fields:
       - name: title
         label: Event Name
