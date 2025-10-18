@@ -27,7 +27,7 @@ content:
       - name: eventImage
         label: Event Image
         type: image
-        media: '/event_images'
+        path: '/event_images'
 
 
 
