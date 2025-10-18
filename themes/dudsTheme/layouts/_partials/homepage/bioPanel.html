@@ -8,7 +8,7 @@
       <p id="BODY_PARAGRAPH" class="text-sm">Our performances speak for themselves, having over 3 years of experience as
         and ensemble we really know how to make you laugh</p>
     </div>
-    {{ partial "button.html" "Learn More" }}
+    {{ partial "button.html" (dict "title" "Learn More" "link" "#" ) }}
   </div>
 
 {{ with resources.Get "images/dudsbg.jpg" }}

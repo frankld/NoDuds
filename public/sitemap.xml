@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/events/</loc>
-    <lastmod>2025-10-17T18:00:00+00:00</lastmod>
+    <lastmod>2025-10-17T19:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/events/2025-10-17-the-cosmic-bird-improv-show/</loc>
+    <lastmod>2025-10-17T19:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/events/2025-10-07-the-failure-hour/</loc>
     <lastmod>2025-10-17T18:00:00+00:00</lastmod>

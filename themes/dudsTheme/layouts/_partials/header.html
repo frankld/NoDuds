@@ -18,7 +18,7 @@
         <div class="flex flex-row items-center gap-2">
         {{ $buttons := slice "Hire Us!" "Get Tickets" }}
         {{ range  $buttons }}
-            {{ partial "button.html" . }}
+            {{ partial "button.html" (dict "title" . "link" "#" ) }}
         {{ end }}
 
         </div>

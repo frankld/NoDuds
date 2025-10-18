@@ -1,3 +1,4 @@
+{{ range where .Site.RegularPages "Section" "events" | first 1 }}
 <div id="HERO OUTER" class="">
     <div id="HERO INNER" class="container flex -mb-16 bg-white shadow-2xl overflow-clip rounded-xl">
     <div class="flex flex-col justify-center w-1/2 p-8 text-white bg-black">
@@ -7,13 +8,16 @@
             <p>7:00pm</p>
             <p>The Pit Lab</p>
         </div>
-        <h2 class="text-4xl font-bold">THE FAILURE HOUR</h2>
+        <h2 class="text-4xl font-bold">{{.Title}}</h2>
         <p>Come see No Dud’s signature longform style of improv, The Failure Fantasia, Followed by an audience night mare
             featuring you! </p>
-        {{ partial "button.html" "Buy Tickets" }}
+        {{ partial "button.html" ( dict "title" "Get Tickets!" "link" .Params.eventLink ) }}
+        {{ partial "button.html" ( dict "title" "Learn More" "link" .RelPermalink ) }}
     </div>
     <div class="w-1/2">
         <img src="https://placehold.co/1200x800/orange/white" alt="Placeholder Image" class="object-cover w-full aspect-4/3">
     </div>
 </div>
 </div>
+
+{{ end }}
