@@ -27,7 +27,7 @@ content:
       - name: eventImage
         label: Event Image
         type: image
-        path: '/event_images'
+        path: '/eventPosters'
 
 
 
