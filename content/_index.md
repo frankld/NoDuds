@@ -1,10 +1,8 @@
-+++
-title = 'Home'
-date = 2023-01-01T08:00:00-07:00
-draft = false
-+++
-
-# Hey World
-Fake Home Page Text pariatur ex culpa magna nostrud est incididunt fugiat
-pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim
-excepteur excepteur pariatur nostrud qui irure ullamco.
+---
+headline: HOME PAGE HEADLINE
+contact:
+  first_name: Francis
+  last_name: Laguna-Driscoll
+  email: fldriscoll@gmail.com
+  phone: "4134044055"
+---
