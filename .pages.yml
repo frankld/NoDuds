@@ -46,9 +46,6 @@ content:
         type: rich-text
         options:
           media: post_images
-
-
-
   - name: posts
     label: Posts
     type: collection
