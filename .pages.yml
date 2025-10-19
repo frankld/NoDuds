@@ -14,41 +14,33 @@ content:
     - name: prefooter
       label: Pre Footer
       type: object
-
-  - name: events
+  - name: events 
     label: Events
     type: collection
     path: 'content/events'
     view: {fields: [ title, draft, date ], primary: title, sort: [ date, title, draft ]}
     fields:
-    - name: event
-      label: Event Details
-      type: object
-      fields:
-      - name: title
-        label: Event Name
-        type: string
-      - name: date
-        label: Date
-        type: date
-        options:
-          time: true
-          format: yyyy-MM-dd'T'HH:mm:ss
-      - {name: draft, label: Draft?,type: boolean, default: true}
-      - name: eventImage
-        label: Event Image
-        type: image
-        path: '/eventPosters'
-        media: '/eventPosters'
-      - {name: eventLink, label: Event Link, type: string}
-      - name: body
-        label: Event Description
-        type: rich-text
-        options:
-          media: post_images
-
-
-
+    - name: title
+      label: Event Name
+      type: string
+    - name: date
+      label: Date
+      type: date
+      options:
+        time: true
+        format: yyyy-MM-dd'T'HH:mm:ss
+    - {name: draft, label: Draft?,type: boolean, default: true}
+    - name: eventImage
+      label: Event Image
+      type: image
+      path: '/eventPosters'
+      media: '/eventPosters'
+    - {name: eventLink, label: Event Link, type: string}
+    - name: body
+      label: Event Description
+      type: rich-text
+      options:
+        media: post_images
   - name: posts
     label: Posts
     type: collection
