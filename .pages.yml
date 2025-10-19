@@ -14,7 +14,6 @@ content:
     - name: prefooter
       label: Pre Footer
       type: object
-
   - name: events
     label: Events
     type: collection
@@ -24,7 +23,6 @@ content:
     - name: eventinfo
       label: Event Details
       type: object
-
   - name: posts
     label: Posts
     type: collection
