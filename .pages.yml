@@ -8,23 +8,22 @@ content:
     fields:
     - {name: headline, label: Headline, type: string, required: false}
     - {name: cover , label: Cover Image , type: image}
-    - {
-        name: sections,
-        label: Sections,
-        type: block,
-        required: false,
-        blockKey: type,
-        blocks: [
-          name: text,
-          label: Add Text Block,
-          fields: [
-              name: content,
-              label: Text Content,
-              type: rich-text
-          ]
-
-        ]
-    }
+    - name: contact
+      label: Contact information
+      type: object
+      fields:
+        - name: first_name
+          label: First name
+          type: string
+        - name: last_name
+          label: Last name
+          type: string
+        - name: email
+          label: Email address
+          type: string
+        - name: phone
+          label: Phone number
+          type: string
   - name: events
     label: Events
     type: collection
