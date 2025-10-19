@@ -8,49 +8,47 @@ content:
     fields:
     - {name: headline, label: Headline, type: string, required: false}
     - {name: cover , label: Cover Image , type: image}
-    - name: contact
-      label: Contact information
+    - name: panel1
+      label: Panel 1
       type: object
-      fields:
-        - name: first_name
-          label: First name
-          type: string
-        - name: last_name
-          label: Last name
-          type: string
-        - name: email
-          label: Email address
-          type: string
-        - name: phone
-          label: Phone number
-          type: string
+    - name: prefooter
+      label: Pre Footer
+      type: object
+
   - name: events
     label: Events
     type: collection
     path: 'content/events'
     view: {fields: [ title, draft, date ], primary: title, sort: [ date, title, draft ]}
     fields:
-    - name: title
-      label: Event Name
-      type: string
-    - name: date
-      label: Date
-      type: date
-      options:
-        time: true
-        format: yyyy-MM-dd'T'HH:mm:ss
-    - {name: draft, label: Draft?,type: boolean, default: true}
-    - name: eventImage
-      label: Event Image
-      type: image
-      path: '/eventPosters'
-      media: '/eventPosters'
-    - {name: eventLink, label: Event Link, type: string}
-    - name: body
-      label: Event Description
-      type: rich-text
-      options:
-        media: post_images
+    - name: event
+      label: Event Details
+      type: object
+      fields:
+      - name: title
+        label: Event Name
+        type: string
+      - name: date
+        label: Date
+        type: date
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm:ss
+      - {name: draft, label: Draft?,type: boolean, default: true}
+      - name: eventImage
+        label: Event Image
+        type: image
+        path: '/eventPosters'
+        media: '/eventPosters'
+      - {name: eventLink, label: Event Link, type: string}
+      - name: body
+        label: Event Description
+        type: rich-text
+        options:
+          media: post_images
+
+
+
   - name: posts
     label: Posts
     type: collection

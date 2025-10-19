@@ -1,6 +1,7 @@
 {{ range where .Site.RegularPages "Section" "events" | first 1 }}
-<div id="HERO OUTER" class="">
-    <div id="HERO INNER" class="container flex -mb-16 bg-white shadow-2xl overflow-clip rounded-xl">
+<div id="HERO OUTER" class="container">
+    <h2 class="mb-8 text-4xl font-black text-center">{{ $.Params.headline}}</h2>
+    <div id="HERO INNER" class="flex -mb-16 bg-white shadow-2xl overflow-clip rounded-xl">
     <div class="flex flex-col justify-center w-1/2 p-8 text-white bg-black">
         <p class="text-amber-400">Next Show:</p>
         <div class="flex gap-4">
@@ -12,7 +13,6 @@
         <p>Come see No Dud’s signature longform style of improv, The Failure Fantasia, Followed by an audience night mare
             featuring you! </p>
         {{ partial "button.html" ( dict "title" "Get Tickets!" "link" .Params.eventLink ) }}
-        {{ partial "button.html" ( dict "title" "Learn More" "link" .RelPermalink ) }}
     </div>
     <div class="w-1/2">
         <img src="https://placehold.co/1200x800/orange/white" alt="Placeholder Image" class="object-cover w-full aspect-4/3">
